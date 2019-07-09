@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="toolbar header-bar">
+    <button mat-icon-button (click)="menuPress()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!--  -->
+    <h1 class="app-name">Bee<b>Hive</b></h1> <p class="Docs">DOCS</p>
+    <span class="spacer"></span>
+    <div>
+  
+  
+      <div class="button-row">
+        <!-- <mat-form-field class="header-select">
+          <mat-select [(value)]="selected">
+            <mat-option>None</mat-option>
+            <mat-option value="option1">Project 1</mat-option>
+            <mat-option value="option2">Project 2</mat-option>
+            <mat-option value="option3">Project 3</mat-option>
+          </mat-select>
+        </mat-form-field>
+        -->
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </div>
+  
+    </div>
+  </mat-toolbar>

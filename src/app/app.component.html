@@ -1,0 +1,21 @@
+<div class="container" [class.is-mobile]="mobileQuery.matches">
+  <app-header-bar (toggle)="controlMenu($event)" (isOpen)="menuIsOpen"></app-header-bar>
+  <mat-sidenav-container class="sidenav-container page-bg">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56" [opened]="menuIsOpen">
+      <mat-nav-list class="menu">
+        <!-- Menu -->
+        <app-main-menu></app-main-menu>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="content-wrapper">
+        <div class="content">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
