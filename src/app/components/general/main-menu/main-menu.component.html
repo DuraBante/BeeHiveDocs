@@ -1,23 +1,18 @@
 <mat-list>
 
-  <!--<mat-divider></mat-divider>
-    <h3 matSubheader>Manager</h3>
-  
-    <mat-list-item routerLink="manage-hives">
-      <mat-icon matListIcon>cloud</mat-icon>
-      <h4 matLine>Manage Hives</h4>
-    </mat-list-item>-->
-
-
-
-  <mat-list-item routerLink="manage-hives">
+  <mat-list-item routerLink="home" routerLinkActive="active" (click)="buttonPress()">
     <h4 matLine>Home</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item routerLink="manage-hives">
+  <mat-list-item  routerLink="logging-on" routerLinkActive="active">
     <h3 matLine>Logging on</h3>
   </mat-list-item>
 
+  <mat-divider></mat-divider>
+  <mat-list-item  routerLink="definitions" routerLinkActive="active">
+    <h3 matLine>Definitions</h3>
+  </mat-list-item>
+  <mat-divider></mat-divider>
 
   <mat-expansion-panel>
     <mat-expansion-panel-header class="drop-down-headers">
@@ -25,10 +20,10 @@
     </mat-expansion-panel-header>
 
     <mat-list>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="creating-a-hive" routerLinkActive="active">
         <h4 matLine>Creating a Hive</h4>
-      </mat-list-item>
-      <mat-list-item routerLink="manage-hives">
+      </mat-list-item >
+      <mat-list-item routerLink="edit-the-hive" routerLinkActive="active">
         <h4 matLine>Edit the Hive</h4>
       </mat-list-item>
     </mat-list>
@@ -42,16 +37,16 @@
     </mat-expansion-panel-header>
 
     <mat-list>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="select-a-hive" routerLinkActive="active">
         <h4 matLine>Select a Hive</h4>
       </mat-list-item>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="create-a-template" routerLinkActive="active">
         <h4 matLine>Create a Template (Forms)</h4>
       </mat-list-item>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="create-and-manage-items" routerLinkActive="active">
         <h4 matLine>Create and Manage Items</h4>
       </mat-list-item>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="create-a-procedure" routerLinkActive="active">
         <h4 matLine>Create a Procedure</h4>
       </mat-list-item>
     </mat-list>
@@ -59,27 +54,27 @@
   </mat-expansion-panel>
 
 
-  <mat-divider></mat-divider>
-  <mat-list-item routerLink="manage-hives">
+ 
+  <mat-list-item routerLink="procedure" routerLinkActive="active">
     <h4 matLine>Procedure</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item routerLink="manage-hives">
+  <mat-list-item routerLink="removal-an-incorrectly-initiated-procedure" routerLinkActive="active">
     <h4 matLine>Removal/Deleting an Incorrectly Initiated Procedure or From</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item routerLink="manage-hives">
+  <mat-list-item routerLink="dashboard" routerLinkActive="active">
     <h4 matLine>Dashboard</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item routerLink="manage-hives">
+  <mat-list-item routerLink="catalog" routerLinkActive="active">
     <h4 matLine>Catalog</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item routerLink="manage-hives">
+  <mat-list-item routerLink="sheets" routerLinkActive="active">
     <h4 matLine>Sheets</h4>
   </mat-list-item>
-  <mat-divider></mat-divider>
+ 
 
   <mat-expansion-panel>
     <mat-expansion-panel-header class="drop-down-headers">
@@ -87,17 +82,17 @@
     </mat-expansion-panel-header>
 
     <mat-list>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="kpi" routerLinkActive="active">
         <h4 matLine>KPI's (Key Performance Indicators)</h4>
       </mat-list-item>
-      <mat-list-item routerLink="manage-hives">
+      <mat-list-item routerLink="data" routerLinkActive="active">
         <h4 matLine>Data</h4>
       </mat-list-item>
     </mat-list>
   </mat-expansion-panel>
 
-  <mat-list-item routerLink="manage-hives">
-    <h4 matLine>Logout</h4>
+  <mat-list-item routerLink="logging-out" routerLinkActive="active">
+    <h4 matLine>Logging Out</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
 
