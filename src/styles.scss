@@ -439,7 +439,7 @@ h1.app-name {
 
 .button-row button,
 .button-row a {
-  margin-right: 8px;
+  //margin-right: 8px;
 }
 
 .status-row {
@@ -647,4 +647,13 @@ h1.app-name {
 
 .tab {
     margin-left: 40px;
+}
+
+.reminder {
+    font-weight: 900;
+    font-style: italic;
+    color: #3e2f5b;
+    font-size: 18px;
+    text-align: center;
+
 }
