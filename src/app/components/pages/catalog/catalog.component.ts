@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-catalog',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  pageForward(){
+    this.router.navigate(["sheets"]);
+  }
+  pageBackward(){
+    this.router.navigate(["dashboard"]);
   }
 
 }

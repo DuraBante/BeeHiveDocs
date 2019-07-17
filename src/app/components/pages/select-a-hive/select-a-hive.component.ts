@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-select-a-hive',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectAHiveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  pageForward(){
+    this.router.navigate(["create-a-template"]);
+  }
+  pageBackward(){
+    this.router.navigate(["edit-the-hive"]);
   }
 
 }

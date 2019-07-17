@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-a-template',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateATemplateComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  pageForward(){
+    this.router.navigate(["create-and-manage-items"]);
+  }
+  pageBackward(){
+    this.router.navigate(["select-a-hive"]);
   }
 
 }

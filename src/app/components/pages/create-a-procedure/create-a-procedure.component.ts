@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-a-procedure',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAProcedureComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  pageForward(){
+    this.router.navigate(["procedure"]);
+  }
+  pageBackward(){
+    this.router.navigate(["create-and-manage-items"]);
   }
 
 }

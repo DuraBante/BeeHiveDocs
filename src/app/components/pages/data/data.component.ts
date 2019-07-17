@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-data',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  pageForward(){
+    this.router.navigate(["logging-out"]);
+  }
+  pageBackward(){
+    this.router.navigate(["kpi"]);
   }
 
 }

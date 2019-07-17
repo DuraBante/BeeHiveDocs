@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sheets',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SheetsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  pageForward(){
+    this.router.navigate(["kpi"]);
+  }
+  pageBackward(){
+    this.router.navigate(["catalog"]);
+  }
 }

@@ -645,6 +645,8 @@ h1.app-name {
     align-items: center;
 }
 
+
+
 .tab {
     margin-left: 40px;
 }
@@ -656,4 +658,26 @@ h1.app-name {
     font-size: 18px;
     text-align: center;
 
+}
+
+.frame {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+    /* max-width: 600px; */
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+  }
+@media only screen and (max-width: 600px){
+  .frame {
+    min-height: 300px;
+  }
+}
+
+.figure{
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
 }

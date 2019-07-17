@@ -1,28 +1,71 @@
 <div class="card">
-    <h1>Catalog</h1>
-    <p>a) The Catalog section is a repository for your all your individual Items. They are visible and available to the
-        end user to complete templates/forms. Forms can be accessed from here or from the Procedures section.</p>
-        <img class="full-width" src='assets/img/img18.jpg' alt="Screen Shot">
-    <p>b) Click on any Item in the Catalog to see its related details.</p>
-    <p>c) You will see areas for Updates (recently completed forms) and Sheets (recent and archived forms).</p>
-    <img class="full-width" src='assets/img/img19.jpg' alt="Screen Shot">
-    <p>d) Click on “Start Form” to bring up templates/forms related to this Item.</p>
-    <p>e) Click “Start” to begin completing the Template/form.</p>
-    <p class="tab">i) NOTE: If no questions/steps show up, none were created in the Template/form. Select “Discard” and
-        refer to Template Builder Section 5d above to add questions or steps to the Template/Form.</p>
-        <img class="full-width" src='assets/img/img20.jpg' alt="Screen Shot">
-    <p>f) Answer the questions or follow the steps.</p>
-    <p>g) Click on “Complete” when finished.</p>
-    <p class="tab">i) In a few seconds, the completed Template/form will show up on the page.</p>
-    <p class="tab">ii) Click “View” to the right of the completed form name to view the details of the steps/responses.</p>
-    <img class="full-width" src='assets/img/img21.jpg' alt="Screen Shot">
-
-
-
-    <h2>Sub-title</h2>
+    <div class="space"></div>
+    <h2>Catalog</h2>
+    <p>How to complete items out of the catalog</p>
+    <div class="space"></div>
+</div>
+<mat-card class="card">
+    <h3>Video Guide</h3>
     <div class="video">
         <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
             class="frame"></iframe>
     </div>
-</div>
+</mat-card>
+<div class="space-small"></div>
+<mat-card class="card">
+    <div>
+        <h3>Walk Through</h3>
+        <p>a) The Catalog section is a repository for your all your individual Items. They are visible and available to
+            the
+            end user to complete templates/forms. Forms can be accessed from here or from the Procedures section. (see figure 1)</p>
+            <div class="space-small"></div>
+        <img class="full-width" src='assets/img/img18.jpg' alt="Screen Shot">
+        <p class="figure">Figure 1</p>
+        <div class="space-small"></div>
+        <p>b) Click on any Item in the Catalog to see its related details.</p>
+        <div class="space-small"></div>
+        <p>c) You will see areas for Updates (recently completed forms) and Sheets (recent and archived forms). (see figure 2)</p>
+        <div class="space-small"></div>
+        <img class="full-width" src='assets/img/img19.jpg' alt="Screen Shot">
+        <p class="figure"> Firgure 2</p>
+        <div class="space-small"></div>
+        <p>d) Click on “Start Form” to bring up templates/forms related to this Item.</p>
+        <div class="space-small"></div>
+        <p>e) Click “Start” to begin completing the Template/form. (figure 3)</p>
+        <div class="space-small"></div>
+        <p class="reminder">i) NOTE: If no questions/steps show up, none were created in the Template/form. Select “Discard”
+            and
+            refer to Template Builder Section 5d above to add questions or steps to the Template/Form.</p>
+        <img class="full-width" src='assets/img/img20.jpg' alt="Screen Shot">
+        <p class="figure">Figure 3</p>
+        <div class="space-small"></div>
+        <p>f) Answer the questions or follow the steps.</p>
+        <div class="space-small"></div>
+        <p>g) Click on “Complete” when finished.</p>
+        <div class="space-small"></div>
+        <p class="reminder">i) In a few seconds, the completed Template/form will show up on the page.</p>
+        <p class="reminder">ii) Click “View” to the right of the completed form name to view the details of the
+            steps/responses. (see figure 4)</p>
+            <div class="space-small"></div>
+        <img class="full-width" src='assets/img/img21.jpg' alt="Screen Shot">
+        <p class="figure">Figure 4</p>
+    </div>
+</mat-card>
+
+<div class="space"></div>
+<mat-card class="card">
+    <div class="button-row flex">
+        <button mat-button (click)="pageBackward()">
+            <mat-icon>arrow_back_ios</mat-icon>
+            Back
+        </button>
+        <div class="spacer"></div>
+        <button mat-button (click)="pageForward()">
+            Continue
+            <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
+    </div>
+
+</mat-card>
+<div class="space"></div>

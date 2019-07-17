@@ -1,20 +1,9 @@
-.frame {
-    display: block;
-    width: 100%;
-    min-height: 400px;
-    /* max-width: 600px; */
-    margin: 0;
-    padding: 0;
-    border: 0 none;
-    box-sizing: border-box;
-  }
-.custome-size {
-  width: 70%;
-  height: auto;
+.odd-pic {
+    width: auto;
+    height: auto;
 }
 @media only screen and (max-width: 600px){
-  .frame {
-    min-height: 300px;
+    .odd-pic{
+        width: 100%;
+    }
   }
-
-}
