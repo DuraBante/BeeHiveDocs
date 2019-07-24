@@ -13,7 +13,7 @@ export class CatalogComponent implements OnInit {
   ngOnInit() {
   }
   pageForward(){
-    this.router.navigate(["sheets"]);
+    this.router.navigate(["procedure"]);
   }
   pageBackward(){
     this.router.navigate(["dashboard"]);

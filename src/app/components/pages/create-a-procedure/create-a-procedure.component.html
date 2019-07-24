@@ -1,77 +1,87 @@
-<div class="card">
-    <div class="space"></div>
-    <h2>Create a Procedure</h2>
-    <p>How to create a procedure</p>
-    <div class="space"></div>
+<div class="content-wrapper">
+    <div class="content">
+        <div class="card">
+            <div class="space"></div>
+            <h2>Create a Procedure</h2>
+            <p>How to create a procedure</p>
+            <div class="space"></div>
+        </div>
+        <mat-card class="card">
+            <h3>Video Guide</h3>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    class="frame"></iframe>
+            </div>
+        </mat-card>
+        <div class="space-small"></div>
+        <mat-card class="card">
+            <div>
+                <h3>Walk Through</h3>
+                <p>a) Click on “Stored Procedures” in the Manager section of the left menu.</p>
+                <div class="space-small"></div>
+                <p>b) If this is the very first Procedure being created for the hive, skip to Step 7c. Otherwise click
+                    on the “+
+                    Create” button located in the upper right-hand corner of the screen. (see figure 1)</p>
+                <div class="space-small"></div>
+                <img class="odd-pic" src='assets/img/img15.jpg' alt="Screen Shot">
+                <p class="figure">Figure 1</p>
+                <div class="space-small"></div>
+                <p>c) Enter a procedure name and description.</p>
+                <div class="space-small"></div>
+                <p>d) Click on “Create Procedure” button.</p>
+                <div class="space-small"></div>
+                <p>e) Under Procedure Parts, click on “+ Add item”</p>
+                <div class="space-small"></div>
+                <p>f) To select existing Item(s), click on the “ + “ or “ > “ for each item.</p>
+                <div class="space-small"></div>
+                <p class="tab">i) Click on “Create Item” button if there is no existing Item of interest.</p>
+
+                <div class="space-small"></div>
+                <p>g) For each Item in the gray lines, click on the “˅” symbol at the end of the gray line to specify
+                    the
+                    corresponding Template to use. (see firgue 2)</p>
+                <div class="space-small"></div>
+                <img class="full-width" src='assets/img/img16.jpg' alt="Screen Shot">
+                <p class="figure">Figure 2</p>
+                <p>h) Click on “Update Procedure” button to save your changes. Failure to do so will result in your
+                    changes
+                    being lost. (see figure 3)</p>
+                <div class="space-small"></div>
+                <img class="full-width" src='assets/img/img17.jpg' alt="Screen Shot">
+                <p class="figure">Figure 3</p>
+
+                <p>i) The new procedure shows up on your “Stored Procedures” list in the left menu.</p>
+                <div class="space-small"></div>
+                <p class="tab">i) NOTE: “Stored Procedures” is different from “Procedures” in the menu. “Procedures”
+                    (described
+                    later) is where the end user goes to start a procedure (answering questions, etc.).</p>
+                <div class="space-small"></div>
+                <p>j) From “Stored Procedures” you can edit each procedure by clicking on the “Edit” link to the right
+                    of each.
+                    Be sure to save the changes.</p>
+                <div class="space-small"></div>
+                <p>k) Once created, your “Stored Procedures” automatically populate in the “Procedures” section of the
+                    left menu
+                    for the end user to see.</p>
+            </div>
+        </mat-card>
+
+        <div class="space"></div>
+        <mat-card class="card">
+            <div class="button-row flex">
+                <button mat-button (click)="pageBackward()">
+                    <mat-icon>arrow_back_ios</mat-icon>
+                    Back
+                </button>
+                <div class="spacer"></div>
+                <button mat-button (click)="pageForward()">
+                    Continue
+                    <mat-icon>arrow_forward_ios</mat-icon>
+                </button>
+            </div>
+
+        </mat-card>
+        <div class="space"></div>
+    </div>
 </div>
-<mat-card class="card">
-    <h3>Video Guide</h3>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            class="frame"></iframe>
-    </div>
-</mat-card>
-<div class="space-small"></div>
-<mat-card class="card">
-    <div>
-        <h3>Walk Through</h3>
-        <p>a) Click on “Stored Procedures” in the Manager section of the left menu.</p>
-        <div class="space-small"></div>
-        <p>b) If this is the very first Procedure being created for the hive, skip to Step 7c. Otherwise click on the “+
-            Create” button located in the upper right-hand corner of the screen. (see figure 1)</p>
-        <div class="space-small"></div>
-        <img class="odd-pic" src='assets/img/img15.jpg' alt="Screen Shot">
-        <p class="figure">Figure 1</p>
-        <div class="space-small"></div>
-        <p>c) Enter a procedure name and description.</p>
-        <div class="space-small"></div>
-        <p>d) Click on “Create Procedure” button.</p>
-        <div class="space-small"></div>
-        <p>e) Under Procedure Parts, click on “+ Add item”</p>
-        <div class="space-small"></div>
-        <p>f) To select existing Item(s), click on the “ + “ or “ > “ for each item.</p>
-        <div class="space-small"></div>
-        <p class="tab">i) Click on “Create Item” button if there is no existing Item of interest.</p>
-
-        <div class="space-small"></div>
-        <p>g) For each Item in the gray lines, click on the “˅” symbol at the end of the gray line to specify the
-            corresponding Template to use. (see firgue 2)</p>
-        <div class="space-small"></div>
-        <img class="full-width" src='assets/img/img16.jpg' alt="Screen Shot">
-        <p class="figure">Figure 2</p>
-        <p>h) Click on “Update Procedure” button to save your changes. Failure to do so will result in your changes
-            being lost. (see figure 3)</p>
-        <div class="space-small"></div>
-        <img class="full-width" src='assets/img/img17.jpg' alt="Screen Shot">
-        <p class="figure">Figure 3</p>
-
-        <p>i) The new procedure shows up on your “Stored Procedures” list in the left menu.</p>
-        <div class="space-small"></div>
-        <p class="tab">i) NOTE: “Stored Procedures” is different from “Procedures” in the menu. “Procedures” (described
-            later) is where the end user goes to start a procedure (answering questions, etc.).</p>
-        <div class="space-small"></div>
-        <p>j) From “Stored Procedures” you can edit each procedure by clicking on the “Edit” link to the right of each.
-            Be sure to save the changes.</p>
-        <div class="space-small"></div>
-        <p>k) Once created, your “Stored Procedures” automatically populate in the “Procedures” section of the left menu
-            for the end user to see.</p>
-    </div>
-</mat-card>
-
-<div class="space"></div>
-<mat-card class="card">
-    <div class="button-row flex">
-        <button mat-button (click)="pageBackward()">
-            <mat-icon>arrow_back_ios</mat-icon>
-            Back
-        </button>
-        <div class="spacer"></div>
-        <button mat-button (click)="pageForward()">
-            Continue
-            <mat-icon>arrow_forward_ios</mat-icon>
-        </button>
-    </div>
-
-</mat-card>
-<div class="space"></div>

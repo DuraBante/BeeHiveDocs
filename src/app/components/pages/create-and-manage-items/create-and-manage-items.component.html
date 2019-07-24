@@ -1,68 +1,78 @@
-<div class="card">
-    <div class="space"></div>
-    <h2>Creating and Mannaging Items</h2>
-    <p>How to create items and how to manage the items you have created</p>
-    <div class="space"></div>
+<div class="content-wrapper">
+    <div class="content">
+        <div class="card">
+            <div class="space"></div>
+            <h2>Creating and Mannaging Items</h2>
+            <p>How to create items and how to manage the items you have created</p>
+            <div class="space"></div>
+        </div>
+        <mat-card class="card">
+            <h3>Video Guide</h3>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    class="frame"></iframe>
+            </div>
+        </mat-card>
+        <div class="space-small"></div>
+
+        <mat-card class="card">
+            <div>
+                <h3>Walk Through</h3>
+                <div class="space-small"></div>
+                <p>a) An Item is one level above the templates (forms) you created in Section 5. Multiple templates can
+                    be
+                    attached
+                    to an Item. Items can stand alone or roll up to a Procedure (see Section 7). All your Items are
+                    listed in
+                    the Catalog on the left menu (see Section 8).</p>
+                <div class="space-small"></div>
+                <p>b) Click on “Item Manager” from the left menu.</p>
+                <div class="space-small"></div>
+                <p>c) If this is the first new Item in a Hive, simply enter
+                    an item name (required), searchable tags, and reference number (e.g., vehicle license plate number),
+                    as
+                    needed.
+                </p>
+                <div class="space-small"></div>
+                <p class="tab">i) If other Items already exist, click on “+ Create” at the top righthand part of the
+                    screen to
+                    bring up a new Item box (see figure 1)</p>
+                <div class="space-small"></div>
+                <p class="tab">ii) Click “Enter” on your keyboard after creating each tag word or phrase to create
+                    multiple tags
+                </p>
+                <div class="space-small"></div>
+                <p>d) Attach the relevant template(s) by clicking on the “ + “ or “ > “. (see figure 1)</p>
+                <img class="full-width" src='assets/img/img14.jpg' alt="Screen Shot">
+                <p class="figure">Figure 1</p>
+                <div class="space-small"></div>
+                <p class="tab">i) Remove extra templates from the item by clicking on the garbage can. These will be the
+                    questions or action steps the user follows for this Item. (see figure 1)</p>
+                <div class="space-small"></div>
+                <p>e) Click on “Create Item” towards the upper right part of the active box. The information will be
+                    lost if you
+                    do not do so. (see figure 1)</p>
+                <div class="space-small"></div>
+                <p>f) The Item now shows up on your Item Manager list in the left menu</p>
+            </div>
+        </mat-card>
+
+        <div class="space"></div>
+        <mat-card class="card">
+            <div class="button-row flex">
+                <button mat-button (click)="pageBackward()">
+                    <mat-icon>arrow_back_ios</mat-icon>
+                    Back
+                </button>
+                <div class="spacer"></div>
+                <button mat-button (click)="pageForward()">
+                    Continue
+                    <mat-icon>arrow_forward_ios</mat-icon>
+                </button>
+            </div>
+
+        </mat-card>
+        <div class="space"></div>
+    </div>
 </div>
-<mat-card class="card">
-    <h3>Video Guide</h3>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            class="frame"></iframe>
-    </div>
-</mat-card>
-<div class="space-small"></div>
-
-<mat-card class="card">
-    <div>
-        <h3>Walk Through</h3>
-        <div class="space-small"></div>
-        <p>a) An Item is one level above the templates (forms) you created in Section 5. Multiple templates can be
-            attached
-            to an Item. Items can stand alone or roll up to a Procedure (see Section 7). All your Items are listed in
-            the Catalog on the left menu (see Section 8).</p>
-        <div class="space-small"></div>
-        <p>b) Click on “Item Manager” from the left menu.</p>
-        <div class="space-small"></div>
-        <p>c) If this is the first new Item in a Hive, simply enter
-            an item name (required), searchable tags, and reference number (e.g., vehicle license plate number), as
-            needed.
-        </p>
-        <div class="space-small"></div>
-        <p class="tab">i) If other Items already exist, click on “+ Create” at the top righthand part of the screen to
-            bring up a new Item box (see figure 1)</p>
-            <div class="space-small"></div>
-        <p class="tab">ii) Click “Enter” on your keyboard after creating each tag word or phrase to create multiple tags
-        </p>
-        <div class="space-small"></div>
-        <p>d) Attach the relevant template(s) by clicking on the “ + “ or “ > “. (see figure 1)</p>
-        <img class="full-width" src='assets/img/img14.jpg' alt="Screen Shot">
-        <p class="figure">Figure 1</p>
-        <div class="space-small"></div>
-        <p class="tab">i) Remove extra templates from the item by clicking on the garbage can. These will be the
-            questions or action steps the user follows for this Item. (see figure 1)</p>
-            <div class="space-small"></div>
-        <p>e) Click on “Create Item” towards the upper right part of the active box. The information will be lost if you
-            do not do so. (see figure 1)</p>
-            <div class="space-small"></div>
-        <p>f) The Item now shows up on your Item Manager list in the left menu</p>
-    </div>
-</mat-card>
-
-<div class="space"></div>
-<mat-card class="card">
-    <div class="button-row flex">
-        <button mat-button (click)="pageBackward()">
-            <mat-icon>arrow_back_ios</mat-icon>
-            Back
-        </button>
-        <div class="spacer"></div>
-        <button mat-button (click)="pageForward()">
-            Continue
-            <mat-icon>arrow_forward_ios</mat-icon>
-        </button>
-    </div>
-
-</mat-card>
-<div class="space"></div>

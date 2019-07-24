@@ -4,12 +4,12 @@
     <h4 matLine>Home</h4>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <mat-list-item  routerLink="logging-on" routerLinkActive="active">
+  <mat-list-item routerLink="logging-on" routerLinkActive="active">
     <h3 matLine>Logging on</h3>
   </mat-list-item>
 
   <mat-divider></mat-divider>
-  <mat-list-item  routerLink="definitions" routerLinkActive="active">
+  <mat-list-item routerLink="definitions" routerLinkActive="active">
     <h3 matLine>Definitions</h3>
   </mat-list-item>
   <mat-divider></mat-divider>
@@ -22,12 +22,12 @@
     <mat-list>
       <mat-list-item routerLink="creating-a-hive" routerLinkActive="active">
         <h4 matLine>Creating a Hive</h4>
-      </mat-list-item >
+      </mat-list-item>
       <mat-list-item routerLink="edit-the-hive" routerLinkActive="active">
         <h4 matLine>Edit the Hive</h4>
       </mat-list-item>
     </mat-list>
-  
+
   </mat-expansion-panel>
 
 
@@ -50,31 +50,39 @@
         <h4 matLine>Create a Procedure</h4>
       </mat-list-item>
     </mat-list>
-  
+
   </mat-expansion-panel>
 
 
- 
-  <mat-list-item routerLink="procedure" routerLinkActive="active">
-    <h4 matLine>Procedure</h4>
-  </mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item routerLink="removal-an-incorrectly-initiated-procedure" routerLinkActive="active">
-    <h4 matLine>Deleting a Procedure</h4>
-  </mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item routerLink="dashboard" routerLinkActive="active">
-    <h4 matLine>Dashboard</h4>
-  </mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item routerLink="catalog" routerLinkActive="active">
-    <h4 matLine>Catalog</h4>
-  </mat-list-item>
-  <mat-divider></mat-divider>
-  <mat-list-item routerLink="sheets" routerLinkActive="active">
-    <h4 matLine>Sheets</h4>
-  </mat-list-item>
- 
+  <mat-expansion-panel>
+    <mat-expansion-panel-header class="drop-down-headers">
+      Using the Hive
+    </mat-expansion-panel-header>
+
+    <mat-list>
+      <mat-list-item routerLink="dashboard" routerLinkActive="active">
+        <h4 matLine>Dashboard</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="catalog" routerLinkActive="active">
+        <h4 matLine>Catalog</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="procedure" routerLinkActive="active">
+        <h4 matLine>Procedure</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="removal-an-incorrectly-initiated-procedure" routerLinkActive="active">
+        <h4 matLine>Deleting a Procedure</h4>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="sheets" routerLinkActive="active">
+        <h4 matLine>Sheets</h4>
+      </mat-list-item>
+
+    </mat-list>
+
+  </mat-expansion-panel>
 
   <mat-expansion-panel>
     <mat-expansion-panel-header class="drop-down-headers">
@@ -104,7 +112,7 @@
 
 
 
-  
+
 </mat-list>
 <div class="space"></div>
 <div class="space"></div>

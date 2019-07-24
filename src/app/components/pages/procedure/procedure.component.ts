@@ -16,7 +16,7 @@ export class ProcedureComponent implements OnInit {
     this.router.navigate(["removal-an-incorrectly-initiated-procedure"]);
   }
   pageBackward(){
-    this.router.navigate(["create-a-procedure"]);
+    this.router.navigate(["catalog"]);
   }
 
 }

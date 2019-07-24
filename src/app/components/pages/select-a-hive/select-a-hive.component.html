@@ -1,52 +1,59 @@
-<div class="card">
-    <div class="space"></div>
-    <h2>Select a Hive</h2>
-    <p>How to select a Hive to edit</p>
-    <div class="space"></div>
+<div class="content-wrapper">
+    <div class="content">
+
+        <div class="card">
+            <div class="space"></div>
+            <h2>Select a Hive</h2>
+            <p>How to select a Hive to edit</p>
+            <div class="space"></div>
+        </div>
+        <mat-card class="card">
+            <h3>Video Guide</h3>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    class="frame"></iframe>
+            </div>
+        </mat-card>
+        <div class="space-small"></div>
+        <mat-card class="card">
+            <div>
+                <h3>Walk Through</h3>
+                <p>a) Locate the Hive you wish to work on by clicking on Manage Hives in the left-hand menu. (see figure
+                    1)</p>
+                <div class="space-small"></div>
+                <img class="full-width" src='assets/img/img6.jpg' alt="Screen Shot">
+                <p class="figure">Figure 1</p>
+                <div class="space-small"></div>
+                <p>b) Click on the three vertical dots next to the Hive name. (see figure 2)</p>
+                <div class="space-small"></div>
+                <p>c) Click on “View Hive.”</p>
+                <p class="reminder">Reminder: “Edit Hive” is only for adding/editing user access. (see figure 2)</p>
+                <div class="space-small"></div>
+                <p>d) When viewing the Hive, the Hive Name will appear at the top-left of the screen, directly below
+                    your name.
+                </p>
+                <div class="space-small"></div>
+                <img class="odd-pic" src='assets/img/img7.jpg' alt="Screen Shot">
+                <p class="figure">Figure 2</p>
+            </div>
+        </mat-card>
+
+        <div class="space"></div>
+        <mat-card class="card">
+            <div class="button-row flex">
+                <button mat-button (click)="pageBackward()">
+                    <mat-icon>arrow_back_ios</mat-icon>
+                    Back
+                </button>
+                <div class="spacer"></div>
+                <button mat-button (click)="pageForward()">
+                    Continue
+                    <mat-icon>arrow_forward_ios</mat-icon>
+                </button>
+            </div>
+
+        </mat-card>
+        <div class="space"></div>
+    </div>
 </div>
-<mat-card class="card">
-    <h3>Video Guide</h3>
-    <div class="video">
-        <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            class="frame"></iframe>
-    </div>
-</mat-card>
-<div class="space-small"></div>
-<mat-card class="card">
-    <div>
-        <h3>Walk Through</h3>
-        <p>a) Locate the Hive you wish to work on by clicking on Manage Hives in the left-hand menu. (see figure 1)</p>
-        <div class="space-small"></div>
-        <img class="full-width" src='assets/img/img6.jpg' alt="Screen Shot">
-        <p class="figure">Figure 1</p>
-        <div class="space-small"></div>
-        <p>b) Click on the three vertical dots next to the Hive name. (see figure 2)</p>
-        <div class="space-small"></div>
-        <p>c) Click on “View Hive.”</p>
-        <p class="reminder">Reminder: “Edit Hive” is only for adding/editing user access. (see figure 2)</p>
-        <div class="space-small"></div>
-        <p>d) When viewing the Hive, the Hive Name will appear at the top-left of the screen, directly below your name.
-        </p>
-        <div class="space-small"></div>
-        <img class="odd-pic" src='assets/img/img7.jpg' alt="Screen Shot">
-        <p class="figure">Figure 2</p>
-    </div>
-</mat-card>
-
-<div class="space"></div>
-<mat-card class="card">
-    <div class="button-row flex">
-        <button mat-button (click)="pageBackward()">
-            <mat-icon>arrow_back_ios</mat-icon>
-            Back
-        </button>
-        <div class="spacer"></div>
-        <button mat-button (click)="pageForward()">
-            Continue
-            <mat-icon>arrow_forward_ios</mat-icon>
-        </button>
-    </div>
-
-</mat-card>
-<div class="space"></div>

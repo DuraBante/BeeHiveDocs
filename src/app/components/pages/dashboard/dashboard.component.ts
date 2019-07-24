@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(["catalog"]);
   }
   pageBackward(){
-    this.router.navigate(["removal-an-incorrectly-initiated-procedure"]);
+    this.router.navigate(["create-a-procedure"]);
   }
 
 }

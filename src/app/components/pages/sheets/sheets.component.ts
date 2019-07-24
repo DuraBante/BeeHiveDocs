@@ -16,6 +16,6 @@ export class SheetsComponent implements OnInit {
     this.router.navigate(["kpi"]);
   }
   pageBackward(){
-    this.router.navigate(["catalog"]);
+    this.router.navigate(["removal-an-incorrectly-initiated-procedure"]);
   }
 }

@@ -13,7 +13,7 @@ export class CreateAProcedureComponent implements OnInit {
   ngOnInit() {
   }
   pageForward(){
-    this.router.navigate(["procedure"]);
+    this.router.navigate(["dashboard"]);
   }
   pageBackward(){
     this.router.navigate(["create-and-manage-items"]);
