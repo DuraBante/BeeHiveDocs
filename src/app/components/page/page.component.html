@@ -22,89 +22,88 @@
     </div>
 </div>
 
-<div class="space"></div>
+<div class="space-small"></div>
 
 <div class="background-primary-color">
     <div class="content-wrapper">
         <div class="content">
+            <div class="space-small"></div>
             <div class="space"></div>
+
+
             <div class="card center">
-                <mat-card class="swap" routerLink="../procedure" routerLinkActive="active">
-                    <div class="table-row">
-                        <p>Getting Started</p>
-                        <span class="spacer"></span>
-                    </div>
-                </mat-card>
-                <mat-card class="swap" routerLink="../procedure" routerLinkActive="active">
-                    <div class="table-row">
-                        <p>Basic Users</p>
-                        <span class="spacer"></span>
-                    </div>
-                </mat-card>
-                <mat-card class="swap" routerLink="../procedure" routerLinkActive="active">
-                    <div class="table-row">
-                        <p>Catalogs</p>
-                        <span class="spacer"></span>
-                    </div>
-                </mat-card>
-                <mat-card class="swap" routerLink="../procedure" routerLinkActive="active">
-                    <div class="table-row">
-                        <p>Managers</p>
-                        <span class="spacer"></span>
-                    </div>
-                </mat-card>
+                <div class="swap">
+                    <mat-card class="full-width" routerLink="../procedure" routerLinkActive="active">
+                        <div class="table-row">
+                            <p>Getting Started</p>
+                            <span class="spacer"></span>
+                        </div>
+                    </mat-card>
+                </div>
+
+
+                <div class="swap">
+                    <mat-card class="full-width" routerLink="../procedure" routerLinkActive="active">
+                        <div class="table-row">
+                            <p>Using the Hive</p>
+                            <span class="spacer"></span>
+                        </div>
+                    </mat-card>
+                </div>
+
+                <div class="swap">
+                    <mat-card class="full-width" routerLink="../procedure" routerLinkActive="active">
+                        <div class="table-row">
+                            <p>Managers</p>
+                            <span class="spacer"></span>
+                        </div>
+                    </mat-card>
+                </div>
             </div>
             <div class="space"></div>
+            <div class="space-small"></div>
         </div>
     </div>
 </div>
 
-<div class="content-wrapper">
-    <div class="card center">
-        <div class="swap">
-            <div class="table-row">
-                <p><b>Learn</b></p>
-                <span class="spacer"></span>
-            </div>
-        </div>
-        <div class="swap">
-            <div class="table-row">
-                <p><b>Stay Connected</b></p>
-                <span class="spacer"></span>
-            </div>
-        </div>
-        <div class="swap">
-            <div class="table-row">
-                <p><b>Support</b></p>
-                <span class="spacer"></span>
-            </div>
-        </div>
-        <div class="swap">
-                <div class="table-row">
-                    <span class="spacer"></span>
-                </div>
-            </div>
-            <div class="swap">
-                <div class="table-row">
-                    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-                    <span class="spacer"></span>
-                </div>
-            </div>
-            <div class="swap">
-                <div class="table-row">
-                    <p>Email</p>
-                    <span class="spacer"></span>
-                </div>
-            </div>
-    </div>
-</div>
+<div class="space-small"></div>
 
 
 <div class="content-wrapper">
-    <div class="card">
-        <li class="bottomlist-title"><b>Test</b></li>
-        <ul>
-            <li class="bottomlist-item">Test</li>
-        </ul>
+    <div class="content">
+        <div class="card">
+            <div class="swap">
+                <div class="">
+                    <h3 class="bottomlist-title"><b>Getting Started</b></h3>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateHive()">Create a Hive</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoEditHive()">Edit the Hive</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoSelectHive()">Select a Hive</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateTemplate()">Create a Template</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateItem()">Create Items</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateProcedure()">Create Procedure</button>
+                </div>
+            </div>
+            <div class="swap">
+                <div class="">
+                    <h3 class="bottomlist-title"><b>Using the Hive</b></h3>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCatalog()">Catalog</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
+                </div>
+            </div>
+            <div class="swap">
+                <div class="">
+                    <h3 class="bottomlist-title"><b>Managers</b></h3>
+                    <ul>
+                        <li class="bottomlist-item">
+                            <p>YouTube</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<div class="space"></div>
