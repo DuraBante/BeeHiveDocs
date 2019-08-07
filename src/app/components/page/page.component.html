@@ -1,24 +1,25 @@
 <div class="content-wrapper">
     <div class="content">
-        <div class="card">
-            <h1>What is BeeHive?</h1>
-            <p>BeeHive is a configurable data application that can fit into any data collection and record keeping
-                process. In
-                the application you create a Hive which is a repository of templates, items, and procedures customized
-                to your
-                organization and objective. Each item can be assigned multiple templates to define what information you
-                want to
-                collect. The instructions below will outline the process involved.</p>
-        </div>
+ 
+            <h2>What is BeeHive Documentation?</h2>
+            <p>BeeHive Docs is a tool you can use to solve your problems or answer your questions. This site will be
+                getting updated as more new and improved conents is added.</p>
+                <div class="space-small"></div>
+            <h3>First Time User?</h3>
+            <p>If this is your first time using BeeHive and the Document set you will want start on the "Getting Started" tab or the "Getting Started" button below.</p>
+            <div class="space-small"></div>
+            <h3>Trouble Shooting?</h3>
+            <p>There is a support page for ever page in BeeHive, so go through the "Using the Hive" tab, "Mannager's View" tab, or their buttons below.</p>
+
         <div class="space-small"></div>
-        <div class="card">
+        <mat-card class="card">
             <h3>Sub-title</h3>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                     class="frame"></iframe>
             </div>
-        </div>
+        </mat-card>
     </div>
 </div>
 
@@ -33,7 +34,7 @@
 
             <div class="card center">
                 <div class="swap">
-                    <mat-card class="full-width" routerLink="../procedure" routerLinkActive="active">
+                    <mat-card class="full-width" (click)="gotoCreateHive()">
                         <div class="table-row">
                             <p>Getting Started</p>
                             <span class="spacer"></span>
@@ -43,7 +44,7 @@
 
 
                 <div class="swap">
-                    <mat-card class="full-width" routerLink="../procedure" routerLinkActive="active">
+                    <mat-card class="full-width" (click)="gotoDashboard()">
                         <div class="table-row">
                             <p>Using the Hive</p>
                             <span class="spacer"></span>
@@ -52,7 +53,7 @@
                 </div>
 
                 <div class="swap">
-                    <mat-card class="full-width" routerLink="../procedure" routerLinkActive="active">
+                    <mat-card class="full-width" (click)="gotoKPI()">
                         <div class="table-row">
                             <p>Managers</p>
                             <span class="spacer"></span>
@@ -75,32 +76,39 @@
             <div class="swap">
                 <div class="">
                     <h3 class="bottomlist-title"><b>Getting Started</b></h3>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateHive()">Create a Hive</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoEditHive()">Edit the Hive</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoSelectHive()">Select a Hive</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateTemplate()">Create a Template</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateItem()">Create Items</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateProcedure()">Create Procedure</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateHive()">Create a
+                        Hive</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoEditHive()">Edit the
+                        Hive</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoSelectHive()">Select a
+                        Hive</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateTemplate()">Create a
+                        Template</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateItem()">Create
+                        Items</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCreateProcedure()">Create
+                        Procedure</button>
                 </div>
             </div>
             <div class="swap">
                 <div class="">
                     <h3 class="bottomlist-title"><b>Using the Hive</b></h3>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoCatalog()">Catalog</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
-                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoDashbaord()">Dashboard</button>
+                    <button mat-button class="bottomlist-button" color="primary"
+                        (click)="gotoDashboard()">Dashboard</button>
+                    <button mat-button class="bottomlist-button" color="primary"
+                        (click)="gotoCatalog()">Catalog</button>
+                    <button mat-button class="bottomlist-button" color="primary"
+                        (click)="gotoProcedure()">Procedure</button>
+                    <button mat-button class="bottomlist-button" color="primary"
+                        (click)="gotoRemoveProcedure()">Deleting a Procedure</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoSheets()">Sheets</button>
                 </div>
             </div>
             <div class="swap">
                 <div class="">
                     <h3 class="bottomlist-title"><b>Managers</b></h3>
-                    <ul>
-                        <li class="bottomlist-item">
-                            <p>YouTube</p>
-                        </li>
-                    </ul>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoKPI()">KPI</button>
+                    <button mat-button class="bottomlist-button" color="primary" (click)="gotoData()">Data</button>
                 </div>
             </div>
         </div>
