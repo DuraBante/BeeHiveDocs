@@ -16,7 +16,7 @@ export class LoggingOnComponent implements OnInit {
     this.router.navigate(["definitions"]);
   }
   pageBackward(){
-    this.router.navigate(["home"]);
+    this.router.navigate(["overview"]);
   }
 
 }

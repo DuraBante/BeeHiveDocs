@@ -13,7 +13,7 @@ export class LoggingOutComponent implements OnInit {
   ngOnInit() {
   }
   pageForward(){
-    this.router.navigate(["home"]);
+    this.router.navigate(["overview"]);
   }
   pageBackward(){
     this.router.navigate(["data"]);

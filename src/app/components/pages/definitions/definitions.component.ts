@@ -16,7 +16,7 @@ export class DefinitionsComponent implements OnInit {
     this.router.navigate(["creating-a-hive"]);
   }
   pageBackward(){
-    this.router.navigate(["logging-on"]);
+    this.router.navigate(["log-on"]);
   }
 
 }

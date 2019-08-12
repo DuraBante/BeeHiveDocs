@@ -13,7 +13,7 @@ export class CreateATemplateComponent implements OnInit {
   ngOnInit() {
   }
   pageForward(){
-    this.router.navigate(["create-and-manage-items"]);
+    this.router.navigate(["create-items"]);
   }
   pageBackward(){
     this.router.navigate(["select-a-hive"]);

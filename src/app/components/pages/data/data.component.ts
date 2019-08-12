@@ -13,7 +13,7 @@ export class DataComponent implements OnInit {
   ngOnInit() {
   }
   pageForward(){
-    this.router.navigate(["logging-out"]);
+    this.router.navigate(["log-out"]);
   }
   pageBackward(){
     this.router.navigate(["kpi"]);

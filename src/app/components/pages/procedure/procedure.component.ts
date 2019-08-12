@@ -13,7 +13,7 @@ export class ProcedureComponent implements OnInit {
   ngOnInit() {
   }
   pageForward(){
-    this.router.navigate(["removal-an-incorrectly-initiated-procedure"]);
+    this.router.navigate(["remove-a-procedure"]);
   }
   pageBackward(){
     this.router.navigate(["catalog"]);

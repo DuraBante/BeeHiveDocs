@@ -23,7 +23,7 @@ gotoCreateTemplate(){
   this.router.navigate(["create-a-template"]);
 }
 gotoCreateItem(){
-  this.router.navigate(["create-and-manage-items"]);
+  this.router.navigate(["create-items"]);
 }
 gotoCreateHive(){
   this.router.navigate(["creating-a-hive"]);
@@ -44,16 +44,16 @@ gotoKPI(){
   this.router.navigate(["kpi"]);
 }
 gotoLoggingOn(){
-  this.router.navigate(["logging-on"]);
+  this.router.navigate(["log-on"]);
 }
 gotoLoggingOut(){
-  this.router.navigate(["logging-out"]);
+  this.router.navigate(["log-out"]);
 }
 gotoProcedure(){
   this.router.navigate(["procedure"]);
 }
 gotoRemoveProcedure(){
-  this.router.navigate(["removal-an-incorrectly-initiated-procedure"]);
+  this.router.navigate(["remove-a-procedure"]);
 }
 gotoSelectHive(){
   this.router.navigate(["select-a-hive"]);

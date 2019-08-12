@@ -20,23 +20,23 @@ import { DefinitionsComponent } from './components/pages/definitions/definitions
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: PageComponent},
-  {path: 'logging-on', component: LoggingOnComponent},
+  {path: '', redirectTo: 'overview', pathMatch: 'full'},
+  {path: 'overview', component: PageComponent},
+  {path: 'log-on', component: LoggingOnComponent},
   {path: 'creating-a-hive', component: CreatingAHiveComponent},
   {path: 'edit-the-hive', component: EditTheHiveComponent},
   {path: 'select-a-hive', component: SelectAHiveComponent},
   {path: 'create-a-template', component: CreateATemplateComponent},
-  {path: 'create-and-manage-items', component: CreateAndManageItemsComponent},
+  {path: 'create-items', component: CreateAndManageItemsComponent},
   {path: 'create-a-procedure', component: CreateAProcedureComponent},
   {path: 'procedure', component: ProcedureComponent},
-  {path: 'removal-an-incorrectly-initiated-procedure', component: RemovalAnIncorrectlyInitiatedProcedureComponent},
+  {path: 'remove-a-procedure', component: RemovalAnIncorrectlyInitiatedProcedureComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'catalog', component: CatalogComponent},
   {path: 'sheets', component: SheetsComponent},
   {path: 'kpi', component: KpiComponent},
   {path: 'data', component: DataComponent},
-  {path: 'logging-out', component:LoggingOutComponent},
+  {path: 'log-out', component:LoggingOutComponent},
   {path: 'definitions', component: DefinitionsComponent}
 ];
 

@@ -16,7 +16,7 @@ export class CreateAProcedureComponent implements OnInit {
     this.router.navigate(["dashboard"]);
   }
   pageBackward(){
-    this.router.navigate(["create-and-manage-items"]);
+    this.router.navigate(["create-items"]);
   }
 
 }
